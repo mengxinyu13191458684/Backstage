@@ -40,6 +40,7 @@ import lombok.extern.slf4j.Slf4j;
 @RequestMapping("/sys/common")
 public class CommonController {
 
+	//使用注解注入配置信息
 	@Value(value = "${jeecg.path.upload}")
 	private String uploadpath;
 
