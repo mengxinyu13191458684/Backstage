@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="jeecg-boot-module-system" />
         <module name="jeecg-boot-base-common" />
-        <module name="jeecg-boot-module-dss" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

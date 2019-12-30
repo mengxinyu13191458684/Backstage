@@ -16,7 +16,6 @@
 	<modules>
 		<module>jeecg-boot-base-common</module>
 		<module>jeecg-boot-module-system</module>
-		<module>jeecg-boot-module-dss</module>
 	</modules>
 	
 	<distributionManagement>
@@ -336,6 +335,16 @@
 	    		<artifactId>jeecg-boot-base-common</artifactId>
 	    		<version>${jeecgboot.common.version}</version>
 	    	</dependency>
+			<dependency>
+				<groupId>org.jeecgframework.boot</groupId>
+				<artifactId>jeecg-boot-module-dss</artifactId>
+				<version>${jeecgboot.common.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jeecgframework.boot</groupId>
+				<artifactId>jeecg-boot-module-system</artifactId>
+				<version>${jeecgboot.common.version}</version>
+			</dependency>
 	    	<!-- 七牛云SDK -->
 			<dependency>
 				<groupId>com.qiniu</groupId>

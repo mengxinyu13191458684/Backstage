@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+
+
 import org.jeecg.modules.shiro.vo.DefContants;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -26,6 +28,8 @@ import springfox.documentation.service.SecurityScheme;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+import static springfox.documentation.builders.RequestHandlerSelectors.basePackage;
 
 /**
  * @Author scott
@@ -99,17 +103,20 @@ public class Swagger2Config implements WebMvcConfigurer {
 	private ApiInfo apiInfo() {
 		return new ApiInfoBuilder()
 				// //大标题
-				.title("Jeecg-Boot 后台服务API接口文档")
+				.title("后台服务API接口文档")
 				// 版本号
 				.version("1.0")
 //				.termsOfServiceUrl("NO terms of service")
 				// 描述
 				.description("后台API接口")
 				// 作者
-				.contact("JEECG团队")
+				.contact("Andrew_Dai")
                 .license("The Apache License, Version 2.0")
                 .licenseUrl("http://www.apache.org/licenses/LICENSE-2.0.html")
 				.build();
 	}
+
+
+
 
 }
